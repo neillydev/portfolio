@@ -4,10 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-    output: {
-        path: path.resolve(__dirname, "build"),
-        filename: "bundle.js"
-    },
+    "mode": process.env.NODE_ENV === "production" ? "production" : "development",
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".jsx"]
     },
