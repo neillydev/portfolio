@@ -18,8 +18,8 @@ const Hero = () => {
                 NEILLY
             </h1>
             <div className='flex flex-col lg:ml-36 lg:mt-10 md:mt-6 sm:mt-6 md:ml-32 sm:ml-28'>
-                <span className='bg-green-400 lg:w-80 md:w-48 sm:w-28 lg:h-1.5 md:h-1 sm:h-1 rounded-md' />
-                <span className='bg-green-400 lg:w-80 md:w-48 sm:w-28 lg:h-1.5 md:h-1 sm:h-1 rounded-md lg:mt-10 md:mt-6 sm:mt-6 ml-16' />
+                <span className='bg-green-400 lg:w-72 md:w-48 sm:w-28 lg:h-1.5 md:h-1 sm:h-1 rounded-md' />
+                <span className='bg-green-400 lg:w-72 md:w-48 sm:w-28 lg:h-1.5 md:h-1 sm:h-1 rounded-md lg:mt-10 md:mt-6 sm:mt-6 lg:ml-24 md:ml-16 sm:ml-16' />
             </div>
         </div>
     )
