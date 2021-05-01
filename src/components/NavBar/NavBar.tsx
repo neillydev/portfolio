@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const styles = require('./NavBar.css');
+
 const NavBar = () => {
     return (
         <nav className='flex justify-between items-center h-16 bg-white text-black relative shadow-sm
-        font-mono'
+        font-sans font-bold'
         role='navigation'>
             <Link to='/' className='pl-8'>
                 Vernon Neilly
