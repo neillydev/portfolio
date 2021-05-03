@@ -1,0 +1,7 @@
+.navBtn:focus {
+    outline: none;
+}
+
+.navBtn:hover > .btnHov {
+    width: 7rem;
+}
