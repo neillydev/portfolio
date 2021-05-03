@@ -18,14 +18,16 @@ const NavBar = () => {
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
             </div>
             <div className="pr-8 items-center xl:flex lg:flex md:flex sm:hidden hidden">
-                <div className="m-8 flex justify-content items-center">
+                <button className="navBtn m-8 flex justify-content items-center">
                     <TwitterIcon />
                     <p className="font-sans font-semibold text-sm ml-4">Twitter</p>
-                </div>
-                <div className="m-8 flex justify-content items-center">
+                    <span className='btnHov absolute rounded h-1 bg-green-500 mt-12' />
+                </button>
+                <button className="navBtn m-8 flex justify-content items-center">
                     <GitIcon />
                     <p className="font-sans font-semibold text-sm ml-4">Github</p>
-                </div>
+                    <span className='btnHov absolute rounded h-1 bg-green-500 mt-12' />
+                </button>
             </div>
         </nav>
     )
