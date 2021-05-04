@@ -3,5 +3,14 @@
 }
 
 .navBtn:hover > .btnHov {
-    width: 7rem;
+    animation: navHov 0.3s forwards;
+}
+
+@keyframes navHov {
+    from {
+        width: 0rem;
+    }
+    to {
+        width: 7.5rem;
+    }
 }
