@@ -2,15 +2,15 @@
     outline: none;
 }
 
-.navBtn:hover > .btnHov {
-    animation: navHov 0.3s forwards;
+.navBtn {
+    position: relative;
 }
 
-@keyframes navHov {
-    from {
-        width: 0rem;
-    }
-    to {
-        width: 7.5rem;
-    }
+.btnHov {
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+
+.navBtn:hover .btnHov {
+    width: 100%;
 }
