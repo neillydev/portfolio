@@ -14,6 +14,17 @@ const handleTwitterBtn = () => {
     window.open('https://twitter.com/neillydev', '_blank');
 }
 
+const handleProjectBtn = () => {
+    
+}
+
+const handleAboutBtn = () => {
+    
+}
+
+const handleContactBtn = () => {
+    
+}
 const NavBar = () => {
     return (
         <nav className='flex items-center h-16 bg-white text-black relative shadow-sm
@@ -28,17 +39,17 @@ const NavBar = () => {
                 </div>
             </div>
             <div className="flex flex-end">
-                <div className='flex items-center mr-8'>
-                    <button className="navBtn items-center justify-content mr-8">
-                        <p className="font-sans font-bold text-md ml-4">Projects</p>
+                <div className='items-center pr-16 xl:flex lg:flex md:flex sm:hidden hidden'>
+                    <button className="navBtn m-8 flex items-center justify-content" onClick={() => handleProjectBtn()}>
+                        <p className="font-sans font-bold text-md">Projects</p>
                         <span className='btnHov absolute rounded h-1 bg-green-500 mt-12' />
                     </button>
-                    <button className="navBtn mr-8 w-24">
-                        <p className="font-sans font-bold text-md ml-4">About Me</p>
+                    <button className="navBtn m-8 w-20 flex justify-content items-center" onClick={() => handleAboutBtn()}>
+                        <p className="font-sans font-bold text-md">About Me</p>
                         <span className='btnHov absolute rounded h-1 bg-green-500 mt-12' />
                     </button>
-                    <button className="navBtn mr-8">
-                        <p className="font-sans font-bold text-md ml-4">Contact</p>
+                    <button className="navBtn m-8 flex justify-content items-center" onClick={() => handleContactBtn()}>
+                        <p className="font-sans font-bold text-md">Contact</p>
                         <span className='btnHov absolute rounded h-1 bg-green-500 mt-12' />
                     </button>
                 </div>

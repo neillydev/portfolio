@@ -1,9 +1,16 @@
+.navBtn {
+    outline: none;
+    border:none;
+    position: relative;
+    transition-duration: 0.4s;
+}
+
 .navBtn:focus {
     outline: none;
 }
 
-.navBtn {
-    position: relative;
+.navBtn:hover{
+    color: rgba(16, 185, 129, var(--tw-bg-opacity));
 }
 
 .btnHov {
