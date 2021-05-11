@@ -15,7 +15,8 @@
 
 .btnHov {
     position: absolute;
-    transition: width 1s ease-in-out;
+    width: 0%;
+    transition: width 0.15s ease-in-out;
 }
 
 .navBtn:hover .btnHov {
