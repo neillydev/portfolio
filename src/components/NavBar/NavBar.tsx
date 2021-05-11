@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useRef, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import TwitterIcon from '../Icons/TwitterIcon';
 import GitIcon from '../Icons/GitIcon';
 
 const styles = require('./NavBar.css');
+
+type NavProps = {
+    handleProjectBtn: () => void,
+}
 
 const handleGitBtn = () => {
     window.open('https://github.com/neillydev', '_blank');
@@ -14,10 +18,6 @@ const handleTwitterBtn = () => {
     window.open('https://twitter.com/neillydev', '_blank');
 }
 
-const handleProjectBtn = () => {
-    
-}
-
 const handleAboutBtn = () => {
     
 }
@@ -25,7 +25,7 @@ const handleAboutBtn = () => {
 const handleContactBtn = () => {
     
 }
-const NavBar = () => {
+const NavBar = ({handleProjectBtn}: NavProps) => {
     return (
         <nav className='flex items-center h-16 bg-white text-black relative shadow-sm
         font-sans font-bold'
