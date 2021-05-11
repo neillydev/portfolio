@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { LegacyRef } from 'react';
 
-const Projects = () => {
+const styles = require('./Projects.css');
+
+type ProjectProps = {
+    refObj: LegacyRef<HTMLDivElement> | undefined
+};
+
+const Projects = ({refObj}: ProjectProps) => {
+
     return (
-        <div className='flex mt-72'>
+        <div ref={refObj} className='projContainer flex mt-72'>
             <div className="flex flex-col">
                 <h1 className='lg:text-6xl md:text-5xl sm:text-4xl 
             text-3xl font-black ml-52'>Latest Projects</h1>
