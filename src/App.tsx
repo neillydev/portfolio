@@ -17,11 +17,11 @@ const App = () => {
     }
 
     return (
-        <>
+        <div className='container'>
             <NavBar handleProjectBtn={handleProjectBtn} />
             <Hero />
             <Projects refObj={projRef} />
-        </>
+        </div>
     );
 };
 
