@@ -9,7 +9,7 @@ type ProjectProps = {
 const Projects = ({ refObj }: ProjectProps) => {
 
     return (
-        <div ref={refObj} className='projContainer flex xl:pl-52'>
+        <div ref={refObj} className='projContainer flex xl:pl-72 xl:pt-52'>
             <div className="flex flex-col">
                 <h1 className='lg:text-6xl md:text-5xl sm:text-4xl 
             text-3xl font-black'>Latest Projects</h1>
