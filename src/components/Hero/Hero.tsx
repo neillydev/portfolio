@@ -21,6 +21,14 @@ const Hero = () => {
                 <span className='bg-green-400 lg:w-72 md:w-48 sm:w-28 lg:h-1.5 md:h-1 sm:h-1 rounded-md' />
                 <span className='bg-green-400 lg:w-72 md:w-48 sm:w-28 lg:h-1.5 md:h-1 sm:h-1 rounded-md lg:mt-10 md:mt-6 sm:mt-6 lg:ml-24 md:ml-16 sm:ml-16' />
             </div>
+            <div className="heroBtnContainer pt-16">
+                <button className="heroBtn border-2 rounded-lg font-bold w-44">
+                    Projects
+                </button>
+                <button className="heroBtn border-2 rounded-lg font-bold w-44 ml-16" >
+                    Let's Chat!
+                </button>
+            </div>
         </div>
     )
 }
