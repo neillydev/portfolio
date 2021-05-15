@@ -9,3 +9,15 @@
     height: 1px;
     width: 50rem;
 }
+
+.aboutBody {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.aboutText {
+    word-wrap: break-word;
+    width: 40rem;
+}
