@@ -23,6 +23,18 @@ const About = ({ refObj }: AbtProps) => {
                         <br />
                         <br />
                         Now I strive to paint the internet with my applications, with my imagination and determination as the limit!
+                        <br />
+                        <br />
+                        Technologies I use consistently:
+                        <br />
+                        <br />
+                        <ul>
+                            <li>Javascript</li>
+                            <li>Typescript</li>
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>React</li>
+                        </ul>
                     </p>
                 </div>
                 <div className="aboutImg flex ml-12">
