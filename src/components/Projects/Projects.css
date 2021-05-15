@@ -4,3 +4,8 @@
     width:100vw;
     height: 100vh;
 }
+
+.projectsHeader > span {
+    height: 1px;
+    width: 50rem;
+}
