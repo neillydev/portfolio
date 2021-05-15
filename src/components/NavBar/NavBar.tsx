@@ -8,6 +8,7 @@ const styles = require('./NavBar.css');
 
 type NavProps = {
     handleProjectBtn: () => void,
+    handleAbtBtn: () => void
 }
 
 const handleGitBtn = () => {
@@ -18,14 +19,10 @@ const handleTwitterBtn = () => {
     window.open('https://twitter.com/neillydev', '_blank');
 }
 
-const handleAboutBtn = () => {
-    
-}
-
 const handleContactBtn = () => {
     
 }
-const NavBar = ({handleProjectBtn}: NavProps) => {
+const NavBar = ({handleProjectBtn, handleAbtBtn}: NavProps) => {
     return (
         <nav className='flex items-center h-16 bg-white text-black relative shadow-sm
         font-sans font-bold'
@@ -44,7 +41,7 @@ const NavBar = ({handleProjectBtn}: NavProps) => {
                         <p className="font-sans font-bold text-md">Projects</p>
                         <span className='btnHov absolute rounded h-1 bg-green-500 mt-12' />
                     </button>
-                    <button className="navBtn m-8 w-20 flex justify-content items-center" onClick={() => handleAboutBtn()}>
+                    <button className="navBtn m-8 w-20 flex justify-content items-center" onClick={() => handleAbtBtn()}>
                         <p className="font-sans font-bold text-md">About Me</p>
                         <span className='btnHov absolute rounded h-1 bg-green-500 mt-12' />
                     </button>
