@@ -19,7 +19,7 @@ const Projects = ({ refObj }: ProjectProps) => {
                     <span className='bg-green-400 lg:ml-24 lg:w-72 md:w-48 sm:w-28 lg:h-1.5 md:h-1 sm:h-1 rounded-md lg:mt-8 md:mt-6 sm:mt-6' />
                 </div>
             </div>
-            <div className="featuresContainer xl:pl-80 xl:pt-20">
+            <div className="featuresContainer flex justify-center">
                 <Featured />
             </div>
         </div>
