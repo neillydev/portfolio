@@ -21,3 +21,12 @@
     word-wrap: break-word;
     width: 40rem;
 }
+
+.aboutImg > div {
+    height: 17rem;
+    width: 17rem;
+}
+
+.aboutImgShadow {
+    z-index: -1;
+}
