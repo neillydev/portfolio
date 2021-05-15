@@ -1,7 +1,16 @@
 .featuredContainer {
+    height: 20rem;
+    width: 60rem;
 }
 
 .imageContainer {
     height: 20rem;
     width: 35rem;
+    z-index: -1;
+}
+
+.featuredDescription {
+    height: 7.5rem;
+    width: 30rem;
+    z-index: 1;
 }
