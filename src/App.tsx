@@ -19,7 +19,7 @@ const App = () => {
     return (
         <div className='container'>
             <NavBar handleProjectBtn={handleProjectBtn} />
-            <Hero />
+            <Hero handleProjectBtn={handleProjectBtn} />
             <Projects refObj={projRef} />
         </div>
     );

@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom';
 
 require('./Hero.css');
 
-const Hero = () => {
+type HeroProps = {
+    handleProjectBtn: () => void,
+}
+
+const Hero = ({handleProjectBtn}: HeroProps) => {
     return (
         <div className='heroContainer bg-white flex flex-col xl:pl-52 xl:pt-52'>
             <div className="flex flex-col md:mb-2 sm:mb-2">
@@ -22,7 +26,7 @@ const Hero = () => {
                 <span className='bg-green-400 lg:w-72 md:w-48 sm:w-28 lg:h-1.5 md:h-1 sm:h-1 rounded-md lg:mt-10 md:mt-6 sm:mt-6 lg:ml-24 md:ml-16 sm:ml-16' />
             </div>
             <div className="heroBtnContainer pt-16">
-                <button className="heroBtn border-2 rounded-lg font-bold w-44">
+                <button className="heroBtn border-2 rounded-lg font-bold w-44" onClick={() => handleProjectBtn()}>
                     Projects
                 </button>
                 <button className="heroBtn border-2 rounded-lg font-bold w-44 ml-16" >
