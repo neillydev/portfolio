@@ -14,3 +14,15 @@
     width: 30rem;
     z-index: 1;
 }
+
+.featureImg {
+    object-fit: cover;
+}
+
+.technology {
+    padding: 1rem;
+}
+
+.projSocial {
+    padding: 1rem;
+}
