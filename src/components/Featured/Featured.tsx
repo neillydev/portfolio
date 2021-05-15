@@ -5,7 +5,19 @@ import ProjectGitIcon from '../Icons/ProjectGitIcon';
 
 require('./Featured.css');
 
-const Featured = () => {
+type FeatProps = {
+    projName: string,
+    projDesc: string,
+    projTechs: string[],
+    gitLink: string,
+    externalLink: string
+}
+
+const handleLinkBtn = (extLink: string) => {
+    window.open(extLink, '_blank');
+}
+
+const Featured = ({projName, projDesc, projTechs, gitLink, externalLink}: FeatProps) => {
     return (
         <div className="featuredContainer flex flex-col xl:pt-28">
             <div className="featuredSide flex flex-col items-end xl:pl-52">
@@ -13,23 +25,24 @@ const Featured = () => {
                     <p className="font-mono text-green-500 justify-end">Featured Project</p>
                 </div>
                 <div className="featuredName flex justify-end xl:pr-4">
-                    <p className="font-sans font-black text-2xl mb-8">Covid Maps</p>
+                    <p className="font-sans font-black text-2xl mb-8">{projName}</p>
                 </div>
                 <div className="featuredDescription flex border-2 border-green-400 bg-green-400 rounded-md flex-grow justify-center items-center shadow-xl">
                     <p className="featuredText flex font-medium font-sans text-green-100 p-4 text-right">
-                        An interactive map of real-time Covid-19 case data built with React JS and the Google Maps API
+                        {projDesc}
                     </p>
                 </div>
                 <div className="featuredFooter">
                     <div className="technologyFooter flex font-mono">
-                        <p className="technology">React.JS</p>
-                        <p className="technology">Google Maps API</p>
+                        {
+                            projTechs.map(tech => <p className="technology">{tech}</p>)
+                        }
                     </div>
                     <div className="socialFooter flex justify-end">
-                        <button className="projSocial">
+                        <button className="projSocial" onClick={() => handleLinkBtn(gitLink)}>
                             <ProjectGitIcon />
                         </button>
-                        <button className="projSocial">
+                        <button className="projSocial" onClick={() => handleLinkBtn(externalLink)}>
                             <ExtLink />
                         </button>
                     </div>
