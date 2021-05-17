@@ -4,9 +4,11 @@ require('./Footer.css');
 
 const Footer = () => {
     return (
-        <div className='footerContainer flex w-full h-8 justify-center items-center'>
-            <p className='font-mono'>Built by Vernon Neilly</p>
-        </div>
+        <footer className="footerContainer flex w-full h-8 justify-center items-center">
+            <div className="footerCredit font-mono">
+                Built by Vernon Neilly
+            </div>
+        </footer>
     )
 }
 
