@@ -5,6 +5,7 @@ import Projects from './components/Projects/Projects';
 
 import './styles.css';
 import About from './components/About/About';
+import Footer from './components/Footer/Footer';
 require('./App.css');
 
 
@@ -29,6 +30,7 @@ const App = () => {
             <Hero handleProjectBtn={handleProjectBtn} />
             <About refObj={abtRef}/>
             <Projects refObj={projRef} />
+            <Footer />
         </div>
     );
 };
