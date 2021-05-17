@@ -28,9 +28,9 @@ const About = ({ refObj }: AbtProps) => {
                         Technologies I use consistently:
                         <br />
                         <br />
-                        <ul>
-                            <li>Javascript</li>
-                            <li>Typescript</li>
+                        <ul className='aboutTechnologies'>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
                             <li>Node.js</li>
                             <li>Python</li>
                             <li>React</li>

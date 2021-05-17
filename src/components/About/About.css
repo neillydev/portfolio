@@ -30,3 +30,21 @@
 .aboutImgShadow {
     z-index: -1;
 }
+
+.aboutTechnologies {
+    columns: 2;
+}
+
+.aboutTechnologies > li::before {
+    content: '▹';
+    position: absolute;
+    left: 0px;
+    --tw-bg-opacity: 1;
+    color: rgba(52, 211, 153, var(--tw-bg-opacity));
+}
+
+.aboutTechnologies > li {
+    position: relative;
+    padding-left: 1.3rem;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
