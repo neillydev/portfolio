@@ -9,7 +9,7 @@ type HeroProps = {
 
 const Hero = ({ handleProjectBtn }: HeroProps) => {
     return (
-        <div className='heroContainer'>
+        <div className='heroContainer flex justify-center items-center'>
             <div className="heroTitleContainer bg-white flex flex-col xl:pl-52 xl:pt-52">
                 <div className="flex flex-col md:mb-2 sm:mb-2">
                     <span className='shadow-lg bg-green-400 lg:w-52 md:w-44 sm:w-36 lg:h-8 md:h-6 sm:h-5 rounded-sm flex items-center justify-center'>
@@ -35,7 +35,7 @@ const Hero = ({ handleProjectBtn }: HeroProps) => {
                 </button>
                 </div>
             </div>
-            <div className="codeContainer">
+            <div className="codeContainer flex rounded absolute shadow-xl border-2">
                 
             </div>
         </div>
