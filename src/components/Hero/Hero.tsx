@@ -36,7 +36,11 @@ const Hero = ({ handleProjectBtn }: HeroProps) => {
                 </div>
             </div>
             <div className="codeContainer flex rounded absolute shadow-xl border-2">
-                
+                <div className="mockControls flex">
+                    <span className="mockWindowControl bg-red-500 rounded-xl" />
+                    <span className="mockWindowControl bg-yellow-500 rounded-xl" />
+                    <span className="mockWindowControl bg-green-500 rounded-xl" />
+                </div>
             </div>
         </div>
     )

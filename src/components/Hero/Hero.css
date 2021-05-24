@@ -32,3 +32,16 @@
     margin-left: 50rem;
     margin-bottom: 5rem;
 }
+
+.mockControls {
+    width: 5rem;
+    height: 5rem;
+    margin-left: .35rem;
+}
+
+.mockWindowControl {
+    width: .75rem;
+    height: .75rem;
+    margin-top: 1.5rem;
+    margin-left: .45rem;
+}
