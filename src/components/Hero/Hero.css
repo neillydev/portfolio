@@ -34,8 +34,8 @@
 }
 
 .mockControls {
-    width: 5rem;
-    height: 5rem;
+    width: 15rem;
+    height: 3.5rem;
     margin-left: .35rem;
 }
 
@@ -43,5 +43,45 @@
     width: .75rem;
     height: .75rem;
     margin-top: 1.5rem;
-    margin-left: .45rem;
+    margin-left: .4rem;
+}
+
+.mockWindowName {
+    margin-top: 1.4rem;
+    margin-left: 4rem;
+}
+
+.mockCodeFile {
+    font-family: "Myriad Pro", Arial;
+}
+
+ol {
+    list-style: decimal !important;
+}
+
+ol li {
+    display: list-item;
+}
+
+ol li::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+
+.code {
+    font-family: "Monaco", "Courier New";
+    font-size: 13px;
+    color: #ccc;
+}
+
+.var {
+    color: #7ed321;
+}
+
+.codeLine {
+    color: #777;
 }
