@@ -18,7 +18,7 @@ const Hero = ({ handleProjectBtn }: HeroProps) => {
                 </div>
                 <h1 className='heroTitle lg:text-9xl md:text-7xl sm:text-5xl 
             text-3xl font-black'>
-                    VERNON
+                VERNON
                 <br />
                 NEILLY
             </h1>
@@ -85,7 +85,7 @@ const Hero = ({ handleProjectBtn }: HeroProps) => {
                                 <span className="var">
                                     var 
                                 </span>
-                                &nbsp;Vernon = {`{`} 
+                                &nbsp;Vernon: Person = {`{`} 
                             </span>
                         </li>
                         <li>
