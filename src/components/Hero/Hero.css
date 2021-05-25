@@ -83,5 +83,22 @@ ol li::marker {
 }
 
 .codeLine {
+    display: block;
     color: #777;
+    overflow: hidden;
+    border-right: .15em solid #777;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .05em;
+    animation: 
+      typing 3.5s steps(40, end),
+      cursorBlink 1s step-end infinite;
+  }
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
+  @keyframes cursorBlink {
+    from, to { border-color: transparent }
+    50% { border-color: #777; }
+  }
