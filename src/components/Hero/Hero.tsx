@@ -89,7 +89,7 @@ const Hero = ({ handleProjectBtn }: HeroProps) => {
                             </span>
                         </li>
                         <li>
-                            <span className="codeLine">
+                            <span className="codeLine line8">
                             &nbsp;&nbsp;&nbsp;&nbsp;name: "Vernon",
                             </span>
                         </li>
