@@ -103,10 +103,11 @@ ol li::marker {
     overflow: hidden;
     white-space: nowrap;
     margin: 0;
+    width: 0;
     letter-spacing: .05em;
     animation: 
-    line9Anim 2.5s steps(40, end),
-      cursorBlink 1s step-end 5;
+    line9Anim 2.5s 3s steps(40, end) forwards,
+    cursorBlink 1s step-end 5;
 }
 
 .line10 {
@@ -115,10 +116,11 @@ ol li::marker {
     overflow: hidden;
     white-space: nowrap;
     margin: 0;
+    width: 0;
     letter-spacing: .05em;
     animation: 
-    line10Anim 2.5s steps(40, end),
-      cursorBlink 1s step-end 5;
+    line10Anim 2.5s 6s steps(40, end) forwards,
+    cursorBlink 1s step-end 5;
 }
 
 @keyframes line8Anim {
@@ -126,7 +128,7 @@ ol li::marker {
         width: 0;
         border-right: .15em solid #777;
     }
-    to { width: 60%;}
+    to { width: 70%;}
 }
 @keyframes line9Anim {
     from{
