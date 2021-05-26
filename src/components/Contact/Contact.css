@@ -1,0 +1,19 @@
+.contactBtn {
+    outline: none;
+    height: 3rem;
+    transition-duration: 0.3s;
+}
+
+.contactBtn:hover {
+    --tw-background-opacity: .45;
+    background-color: rgba(100, 255, 218, var(--tw-background-opacity));
+}
+
+.contactBtn:focus {
+    outline: none;
+}
+
+.contactBtn:active {
+    --tw-background-opacity: 1;
+    background-color: rgba(100, 255, 218, var(--tw-background-opacity));
+}
