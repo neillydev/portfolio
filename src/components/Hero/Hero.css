@@ -94,18 +94,64 @@ ol li::marker {
     margin: 0;
     letter-spacing: .05em;
     animation: 
-      typing 2.5s steps(40, end),
-      cursorBlink 1s step-end 3;
+    line8Anim 2.5s steps(40, end),
+    cursorBlink 1s step-end 3;
 }
-@keyframes typing {
+.line9 {
+    display: block;
+    color: #777;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: .05em;
+    animation: 
+    line9Anim 2.5s steps(40, end),
+      cursorBlink 1s step-end 5;
+}
+
+.line10 {
+    display: block;
+    color: #777;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: .05em;
+    animation: 
+    line10Anim 2.5s steps(40, end),
+      cursorBlink 1s step-end 5;
+}
+
+@keyframes line8Anim {
     from{
         width: 0;
         border-right: .15em solid #777;
     }
     to { width: 60%;}
 }
+@keyframes line9Anim {
+    from{
+        width: 0;
+        border-right: .15em solid #777;
+    }
+    to { width: 100%;}
+}
+@keyframes line10Anim {
+    from{
+        width: 0;
+        border-right: .15em solid #777;
+    }
+    to { width: 70%;}
+}
 @keyframes cursorBlink {
     from { border-color: transparent; }
     to{ border-right-width: 0; border-color: transparent; }
     50% { border-color: #777; }
 }
+/*@keyframes typing {
+    from{
+        width: 0;
+        border-right: .15em solid #777;
+    }
+    to { width: 60%;}
+}
+*/
