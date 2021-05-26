@@ -90,19 +90,22 @@ ol li::marker {
     display: block;
     color: #777;
     overflow: hidden;
-    border-right: .15em solid #777;
     white-space: nowrap;
     margin: 0;
     letter-spacing: .05em;
     animation: 
-      typing 2.5s steps(45, end),
-      cursorBlink 1s step-end infinite;
-  }
+      typing 2.5s steps(40, end),
+      cursorBlink 1s step-end 3;
+}
 @keyframes typing {
-    from { width: 0 }
-    to { width: 60% }
+    from{
+        width: 0;
+        border-right: .15em solid #777;
+    }
+    to { width: 60%;}
 }
 @keyframes cursorBlink {
-    from, to { border-color: transparent }
+    from { border-color: transparent; }
+    to{ border-right-width: 0; border-color: transparent; }
     50% { border-color: #777; }
 }
