@@ -8,7 +8,8 @@ const styles = require('./NavBar.css');
 
 type NavProps = {
     handleProjectBtn: () => void,
-    handleAbtBtn: () => void
+    handleAbtBtn: () => void,
+    handleContactBtn: () => void,
 }
 
 const handleGitBtn = () => {
@@ -19,10 +20,7 @@ const handleTwitterBtn = () => {
     window.open('https://twitter.com/neillydev', '_blank');
 }
 
-const handleContactBtn = () => {
-    
-}
-const NavBar = ({handleProjectBtn, handleAbtBtn}: NavProps) => {
+const NavBar = ({handleProjectBtn, handleAbtBtn, handleContactBtn}: NavProps) => {
     return (
         <nav className='flex items-center h-16 bg-white text-black relative shadow-sm
         font-sans font-bold'
