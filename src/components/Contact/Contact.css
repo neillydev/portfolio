@@ -1,6 +1,6 @@
 .contactBtn {
     outline: none;
-    height: 3rem;
+    height: 3.5rem;
     transition-duration: 0.3s;
 }
 
@@ -16,4 +16,7 @@
 .contactBtn:active {
     --tw-background-opacity: 1;
     background-color: rgba(100, 255, 218, var(--tw-background-opacity));
+}
+
+.contactBody {
 }
