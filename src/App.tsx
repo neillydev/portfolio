@@ -14,24 +14,33 @@ const App = () => {
     const env = process.env.NODE_ENV;
     const projRef = useRef<HTMLDivElement>(null);
     const abtRef = useRef<HTMLDivElement>(null);
+    const contactRef = useRef<HTMLDivElement>(null);
     
     const handleProjectBtn = () => {
         if(projRef.current){
             projRef.current.scrollIntoView();
         }
     }
+
     const handleAbtBtn = () => {
         if(abtRef.current){
             abtRef.current.scrollIntoView();
         }
     }
+
+    const handleContactBtn = () => {
+        if(contactRef.current){
+            contactRef.current.scrollIntoView();
+        }
+    }
+
     return (
         <div className='container'>
-            <NavBar handleProjectBtn={handleProjectBtn} handleAbtBtn={handleAbtBtn} />
+            <NavBar handleProjectBtn={handleProjectBtn} handleAbtBtn={handleAbtBtn} handleContactBtn={handleContactBtn} />
             <Hero handleProjectBtn={handleProjectBtn} />
             <About refObj={abtRef}/>
             <Projects refObj={projRef} />
-            <Contact />
+            <Contact refObj={contactRef} />
             <Footer />
         </div>
     );
