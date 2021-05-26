@@ -94,12 +94,12 @@ const Hero = ({ handleProjectBtn }: HeroProps) => {
                             </span>
                         </li>
                         <li>
-                            <span className="codeLine">
+                            <span className="codeLine line9">
                             &nbsp;&nbsp;&nbsp;&nbsp;occupation: "Full Stack Developer",
                             </span>
                         </li>
                         <li>
-                            <span className="codeLine">
+                            <span className="codeLine line10">
                             &nbsp;&nbsp;&nbsp;&nbsp;yearsOfExperience: 10
                             </span>
                         </li>
