@@ -4,7 +4,7 @@ require('./Contact.css');
 
 type ContactProps = {
     refObj: LegacyRef<HTMLDivElement> | undefined;
-    handleModalActive: () => void;
+    handleModalActive: (modalSet: boolean) => void;
 }
 const Contact = ({ refObj, handleModalActive }: ContactProps) => {
     return (
@@ -17,7 +17,7 @@ const Contact = ({ refObj, handleModalActive }: ContactProps) => {
             <div className="contactBody flex justify-center m-16">
                 <h1 className="font-sans font-semibold text-xl">Currently looking for new opportunities! Shoot me a message, and let's talk about your project!</h1>
             </div>
-            <button className="contactBtn border-2 border-green-400 text-green-500 rounded font-bold w-36" onClick={() => handleModalActive()}>
+            <button className="contactBtn border-2 border-green-400 text-green-500 rounded font-bold w-36" onClick={() => handleModalActive(true)}>
                 Contact Me
             </button>
         </div>
