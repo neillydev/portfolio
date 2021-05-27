@@ -1,4 +1,5 @@
 .modalContainer{
+    
 }
 
 .modalBackground {
@@ -13,4 +14,23 @@
     background: rgb(0, 0, 0);
     pointer-events: all;
     z-index: 100;
+}
+
+.modalLayer {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 101;
+}
+
+.modalBody {
+    width: 500px;
+    height: 350px;
+    position: relative;
+    z-index: 1000;
+    transition: width 2s ease-in-out;
 }

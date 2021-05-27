@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 require('./Modal.css');
 
@@ -7,19 +7,18 @@ type ModalProps = {
 }
 
 const Modal = ({ handleModalActive }: ModalProps) => {
-    const [modalOpen, setModalOpen] = useState(true);
 
     return (
-        <>
-        { modalOpen ?
         <div className="modalContainer">
-            <div className="modalBackground" onClick={() => handleModalActive(false)}>
-
+            <div className="modalBackground">
+                
+            </div>
+            <div className="modalLayer flex items-center justify-center" onClick={() => handleModalActive(false)}>
+                <form>
+                    <div className="modalBody rounded-lg bg-green-400"></div>
+                </form>
             </div>
         </div>
-        : null
-        }
-        </>
     )
 }
 
