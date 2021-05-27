@@ -20,3 +20,8 @@
 
 .contactBody {
 }
+
+.contactHeader > span {
+    height: 1px;
+    width: 30rem;
+}

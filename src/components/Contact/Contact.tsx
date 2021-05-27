@@ -10,10 +10,12 @@ const Contact = ({ refObj }: ContactProps) => {
     return (
         <div ref={refObj} className="contactContainer flex flex-col mb-20 justify-center items-center">
             <div className="contactHeader flex justify-center">
+                <span className='bg-green-200 mr-8 rounded-xl mt-10' />
                 <h1 className="font-black text-6xl">Let's Chat</h1>
+                <span className='bg-green-200 ml-8 rounded-xl mt-10' />
             </div>
             <div className="contactBody flex justify-center m-16">
-                <h1 className="font-sans font-semibold text-xl">Currently looking for new opportunities! Shoot me a message, and let's get the ball rolling and talk about your project!</h1>
+                <h1 className="font-sans font-semibold text-xl">Currently looking for new opportunities! Shoot me a message, and let's talk about your project!</h1>
             </div>
             <button className="contactBtn border-2 border-green-400 text-green-500 rounded font-bold w-36" onClick={() => null}>
                 Contact Me
