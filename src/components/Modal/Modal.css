@@ -27,7 +27,7 @@
     z-index: 101;
 }
 
-.modalBody {
+.modalLayerContainer {
     width: 500px;
     height: 350px;
     position: relative;
