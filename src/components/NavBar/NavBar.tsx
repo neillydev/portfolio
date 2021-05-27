@@ -35,12 +35,12 @@ const NavBar = ({handleProjectBtn, handleAbtBtn, handleContactBtn}: NavProps) =>
             </div>
             <div className="flex flex-end">
                 <div className='items-center pr-16 xl:flex lg:flex md:flex sm:hidden hidden'>
-                    <button className="navBtn m-8 flex items-center justify-content" onClick={() => handleProjectBtn()}>
-                        <p className="font-sans font-bold text-md">Projects</p>
-                        <span className='btnHov absolute rounded h-1 bg-green-500 mt-12' />
-                    </button>
                     <button className="navBtn m-8 flex justify-content items-center" onClick={() => handleAbtBtn()}>
                         <p className="font-sans font-bold text-md">About</p>
+                        <span className='btnHov absolute rounded h-1 bg-green-500 mt-12' />
+                    </button>
+                    <button className="navBtn m-8 flex items-center justify-content" onClick={() => handleProjectBtn()}>
+                        <p className="font-sans font-bold text-md">Projects</p>
                         <span className='btnHov absolute rounded h-1 bg-green-500 mt-12' />
                     </button>
                     <button className="navBtn m-8 flex justify-content items-center" onClick={() => handleContactBtn()}>
