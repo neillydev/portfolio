@@ -37,8 +37,8 @@ const App = () => {
         }
     }
 
-    const handleModalActive = () => {
-        setModalActive(true);
+    const handleModalActive = (modalSet: boolean) => {
+        setModalActive(modalSet);
     }
 
     return (
@@ -48,7 +48,7 @@ const App = () => {
             <About refObj={abtRef}/>
             <Projects refObj={projRef} />
             <Contact refObj={contactRef} handleModalActive={handleModalActive} />
-            { modalActive ? <Modal /> : null}
+            { modalActive ? <Modal handleModalActive={handleModalActive} /> : null}
             <Footer />
         </div>
     );
