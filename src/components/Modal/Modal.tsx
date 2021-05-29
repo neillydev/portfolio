@@ -9,11 +9,8 @@ type ModalProps = {
 const Modal = ({ handleModalActive }: ModalProps) => {
 
     return (
-        <div className="modalContainer">
-            <div className="modalBackground">
-                
-            </div>
-            <div className="modalLayer flex items-center justify-center" onClick={() => handleModalActive(false)}>
+        <div className="modalContainer flex items-center justify-center">
+            <div className="modalLayer flex items-center justify-center">
                 <form>
                     <div className="modalLayerContainer rounded-lg bg-green-400">
                         <div className="modalHeader flex justify-center">
@@ -39,6 +36,9 @@ const Modal = ({ handleModalActive }: ModalProps) => {
                         </div>
                     </div>
                 </form>
+                <div className="modalBackground" onClick={() => handleModalActive(false)}>
+
+                </div>
             </div>
         </div>
     )
