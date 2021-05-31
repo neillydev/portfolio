@@ -1,0 +1,21 @@
+.socialsContainer {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    color: gray;
+}
+
+.socialsContainer::after { 
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: rgb(182, 182, 182);
+}
+
+.sideSocial {
+    padding: 10px;
+}
