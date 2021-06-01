@@ -5,9 +5,9 @@ require('./Hero.css');
 
 type HeroProps = {
     handleProjectBtn: () => void,
+    handleModalActive: (modalSet: boolean) => void;
 }
-
-const Hero = ({ handleProjectBtn }: HeroProps) => {
+const Hero = ({ handleProjectBtn, handleModalActive }: HeroProps) => {
     return (
         <div className='heroContainer flex justify-center items-center'>
             <div className="heroTitleContainer bg-white flex flex-col xl:pl-52 xl:pt-52">
@@ -29,10 +29,10 @@ const Hero = ({ handleProjectBtn }: HeroProps) => {
                 <div className="heroBtnContainer pt-16">
                     <button className="heroBtn border-2 rounded-lg font-bold w-44" onClick={() => handleProjectBtn()}>
                         Projects
-                </button>
+                    </button>
                     <button className="heroBtn border-2 rounded-lg font-bold w-44 ml-16" >
                         Let's Chat!
-                </button>
+                    </button>
                 </div>
             </div>
             <div className="codeContainer flex flex-col rounded absolute shadow-xl border-2">
