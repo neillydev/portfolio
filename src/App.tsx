@@ -8,6 +8,7 @@ import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
 import Modal from './components/Modal/Modal';
+import Socials from './components/Socials/Socials';
 require('./App.css');
 
 
@@ -44,11 +45,12 @@ const App = () => {
     return (
         <div className='container'>
             <NavBar handleProjectBtn={handleProjectBtn} handleAbtBtn={handleAbtBtn} handleContactBtn={handleContactBtn} />
-            <Hero handleProjectBtn={handleProjectBtn} />
+            <Hero handleProjectBtn={handleProjectBtn} handleModalActive={handleModalActive} />
             <About refObj={abtRef}/>
             <Projects refObj={projRef} />
             <Contact refObj={contactRef} handleModalActive={handleModalActive} />
             { modalActive ? <Modal handleModalActive={handleModalActive} /> : null}
+            <Socials />
             <Footer />
         </div>
     );

@@ -30,7 +30,7 @@ const Hero = ({ handleProjectBtn, handleModalActive }: HeroProps) => {
                     <button className="heroBtn border-2 rounded-lg font-bold w-44" onClick={() => handleProjectBtn()}>
                         Projects
                     </button>
-                    <button className="heroBtn border-2 rounded-lg font-bold w-44 ml-16" >
+                    <button className="heroBtn border-2 rounded-lg font-bold w-44 ml-16" onClick={() => handleModalActive(true)}>
                         Let's Chat!
                     </button>
                 </div>
