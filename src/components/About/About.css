@@ -22,12 +22,29 @@
     width: 40rem;
 }
 
-.aboutImg > div {
-    height: 17rem;
-    width: 17rem;
+.aboutImg {
+    display: block;
+    position: relative;
+    position: relative;
+    max-width: 300px;
+    max-height: 300px;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    background-color: rgba(52, 211, 153);
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
 }
 
-.aboutImgShadow {
+.aboutImgContainer::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(52, 211, 153);
+    border-radius: 4px;
+    top: 20px;
+    left: 20px;
     z-index: -1;
 }
 

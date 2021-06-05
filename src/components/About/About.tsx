@@ -38,8 +38,11 @@ const About = ({ refObj }: AbtProps) => {
                     </p>
                 </div>
                 <div className="aboutImg flex ml-12">
-                    <div className="bg-green-400 rounded"></div>
-                    <div className="aboutImgShadow border-2 border-green-400 rounded absolute ml-4 mt-4"></div>
+                    <div className="aboutImgContainer rounded-xl">
+                        <div className="aboutImgOverlay">
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
