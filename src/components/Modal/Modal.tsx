@@ -17,7 +17,7 @@ const Modal = ({ handleModalActive }: ModalProps) => {
                             <h1 className="text-white font-black font-sans p-4 text-3xl">Contact Me</h1>
                         </div>
                         <div className="modalBody">
-                            <div className="modalSubjectHeader p-4">
+                            <div className="modalHeader p-4">
                                 <h5 className="subjectHeader text-white text-lg font-bold">
                                     SUBJECT
                                 </h5>
@@ -25,12 +25,12 @@ const Modal = ({ handleModalActive }: ModalProps) => {
                                     <input type="text" className="modalInputSubject rounded" />
                                 </div>
                             </div>
-                            <div className="modalBodyHeader p-4">
+                            <div className="modalHeader p-4">
                                 <h5 className="bodyHeader text-white text-lg font-bold">
                                     BODY
                                 </h5>
                                 <div className="inputContainer">
-                                    <input type="text" className="modalInputBody rounded" />
+                                    <textarea className="modalInputBody rounded" />
                                 </div>
                             </div>
                         </div>

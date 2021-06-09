@@ -1,5 +1,6 @@
-.modalContainer{
-    
+.modalHeader {
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 
 .modalBackground {
@@ -37,9 +38,19 @@
 
 .modalInputSubject {
     width: 100%;
+    outline: none;
+    border: none;
+    padding: 3px;
 }
 
 .modalInputBody {
     width: 100%;
     height: 6.5rem;
+    outline: none;
+    border: none;
+    padding: 3px;
+    resize: none;
+}
+
+.inputContainer {
 }
