@@ -149,11 +149,21 @@ ol li::marker {
     to{ border-right-width: 0; border-color: transparent; }
     50% { border-color: #777; }
 }
-/*@keyframes typing {
-    from{
-        width: 0;
-        border-right: .15em solid #777;
+
+@media (max-width:500px) {
+    .heroTitleContainer {
+        align-items: center;
     }
-    to { width: 60%;}
+
+    .codeContainer {
+        margin-left: 0;
+        align-self: center;
+        width: 25.8rem;
+        height: 16.6rem;
+        margin-bottom: 10rem;
+    }
+    
+    .code {
+        font-size: 12px;
+    }
 }
-*/

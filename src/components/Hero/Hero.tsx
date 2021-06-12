@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 require('./Hero.css');
@@ -10,14 +10,14 @@ type HeroProps = {
 const Hero = ({ handleProjectBtn, handleModalActive }: HeroProps) => {
     return (
         <div className='heroContainer flex justify-center items-center'>
-            <div className="heroTitleContainer bg-white flex flex-col xl:pl-52 xl:pt-52">
-                <div className="flex flex-col md:mb-2 sm:mb-2">
-                    <span className='shadow-lg bg-green-400 lg:w-52 md:w-44 sm:w-36 lg:h-8 md:h-6 sm:h-5 rounded-sm flex items-center justify-center'>
-                        <h1 className='font-mono font-semibold lg:text-base md:text-sm sm:text-xs'>Full Stack Developer</h1>
+            <div className="heroTitleContainer bg-white flex flex-col xl:pl-52 xl:pt-52 lg:pt-52 md:pt-52 pt-16">
+                <div className="flex flex-col md:mb-2 mb-2">
+                    <span className='shadow-lg bg-green-400 lg:w-52 md:w-44 w-36 lg:h-8 md:h-6 h-5 rounded-sm flex items-center justify-center'>
+                        <h1 className='font-mono font-semibold lg:text-base md:text-sm text-xs'>Full Stack Developer</h1>
                     </span>
                 </div>
                 <h1 className='heroTitle lg:text-9xl md:text-7xl sm:text-5xl 
-            text-3xl font-black'>
+            text-5xl font-black'>
                 VERNON
                 <br />
                 NEILLY
@@ -26,7 +26,7 @@ const Hero = ({ handleProjectBtn, handleModalActive }: HeroProps) => {
                     <span className='bg-green-400 lg:w-72 md:w-48 sm:w-28 lg:h-1 md:h-1 sm:h-1 rounded-md' />
                     <span className='bg-green-400 lg:w-72 md:w-48 sm:w-28 lg:h-1 md:h-1 sm:h-1 rounded-md lg:mt-10 md:mt-6 sm:mt-6 lg:ml-24 md:ml-16 sm:ml-16' />
                 </div>
-                <div className="heroBtnContainer pt-16">
+                <div className="heroBtnContainer pt-16 xl:flex lg:flex md:flex sm:flex hidden">
                     <button className="heroBtn border-2 rounded-lg font-bold w-44" onClick={() => handleProjectBtn()}>
                         Projects
                     </button>
@@ -35,7 +35,7 @@ const Hero = ({ handleProjectBtn, handleModalActive }: HeroProps) => {
                     </button>
                 </div>
             </div>
-            <div className="codeContainer flex flex-col rounded absolute shadow-xl border-2">
+            <div className="codeContainer flex flex-col rounded absolute shadow-xl border-2 self-center">
                 <div className="codeHeader flex">
                     <div className="mockControls flex">
                         <span className="mockWindowControl bg-red-500 rounded-xl" />
