@@ -16,7 +16,7 @@ const About = ({ refObj }: AbtProps) => {
                     <span className='aboutHeaderDash bg-green-200 lg:ml-8 ml-4 rounded-xl mt-10' />
                 </div>
             </div>
-            <div className="aboutBody flex justify-center p-32">
+            <div className="aboutBody flex xl:justify-center lg:justify-center md:justify-center xl:p-32 lg:p-32 md:p-32 sm:p-32 p-4">
                 <div className="aboutText font-semibold">
                     <p>
                         Hello! My name is Vernon and I build and design responsive and sleek applications for the world to enjoy! I started this journey as a developer when I was 10 years old, with a dream to create my own website!
