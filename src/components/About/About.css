@@ -71,3 +71,15 @@
     padding-left: 1.3rem;
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
+
+@media (max-width:500px){
+    .aboutHeader {
+        width: 20rem;
+        white-space: nowrap;
+        align-self: center;
+    }
+
+    .aboutHeader > span {
+        margin-top: 1.4rem;
+    }
+}
