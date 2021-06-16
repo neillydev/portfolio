@@ -18,10 +18,8 @@
     background-color: rgba(100, 255, 218, var(--tw-background-opacity));
 }
 
-.contactBody {
-}
-
 .contactHeader > span {
     height: 1px;
-    width: 30rem;
+    /*width: 30rem;*/
+    width: auto;
 }
