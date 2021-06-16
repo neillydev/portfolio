@@ -81,6 +81,7 @@
         height: 70%;
         flex-direction: column;
         align-items: center;
+        padding: 3rem;
     }
 
     .aboutHeader {
@@ -104,6 +105,6 @@
     .aboutText{
         font-size: 0.875rem;
         line-height: 1.25rem;
-        width: 25rem;
+        width: auto;
     }
 }
