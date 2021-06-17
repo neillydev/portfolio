@@ -26,7 +26,7 @@ const NavBar = ({handleProjectBtn, handleAbtBtn, handleContactBtn}: NavProps) =>
         font-sans font-bold'
             role='navigation'>
             <div className="flex items-center w-screen">
-                <Link to='/' className='xl:pl-32 lg:pl-28 md:pl-12 pl-8 xl:text-lg lg:text-lg md:text-lg sm:text-sm text-sm'>
+                <Link to='/' className='xl:pl-32 lg:pl-28 md:pl-12 pl-8 xl:text-lg lg:text-lg md:text-lg sm:text-sm text-xs whitespace-nowrap'>
                     &lt; Vernon Neilly /&gt;
                 </Link>
                 <div className="flex justify-end w-screen pr-8 cursor-pointer md:hidden">
