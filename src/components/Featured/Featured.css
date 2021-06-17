@@ -35,3 +35,18 @@
    color: rgba(52, 211, 153);
    transition-duration: 0.3s;
 }
+
+@media (max-width: 500px) {
+    .imageContainer {
+        height: 5rem;
+        width: 15rem;
+        z-index: -1;
+    }
+
+    .featuredDescription {
+        height: 4.5rem;
+        width: 20rem;
+        z-index: 1;
+    }
+    
+}
