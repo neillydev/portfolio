@@ -9,3 +9,16 @@
     height: 1px;
     width: 50rem;
 }
+
+
+@media (max-width: 500px) {
+    .projectsHeader {
+        white-space: nowrap;
+        align-self: center;
+    }
+
+    .projectsHeader > span {
+        margin-top: 1.4rem;
+        display: none;
+    }
+}
