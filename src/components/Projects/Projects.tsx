@@ -11,11 +11,11 @@ const Projects = ({ refObj }: ProjectProps) => {
 
     return (
         <div ref={refObj} className='projContainer flex flex-col'>
-            <div className="flex flex-col xl:pl-72 xl:pt-32">
+            <div className="projectsHeaderContainer flex flex-col xl:pt-32 lg:pr-32 md:pr-32 sm:pr-32 md:whitespace-nowrap sm:whitespace-nowrap">
                 <div className="projectsHeader flex">
-                    <h1 className='lg:text-6xl md:text-5xl sm:text-4xl 
+                    <h1 className='xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl 
             text-3xl font-black'>Featured Projects</h1>
-                    <span className='bg-green-200 lg:ml-8 rounded-xl mt-10' />
+                    <span className='bg-green-200 lg:ml-8 md:ml-4 sm:ml-4 rounded-xl xl:mt-10 lg:mt-8 md:mt-7 sm:mt-5' />
                 </div>
             </div>
             <div className="featuresContainer flex justify-center">

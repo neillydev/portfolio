@@ -5,15 +5,23 @@
     height: 100vh;
 }
 
-.projectsHeader > span {
-    height: 1px;
-    width: 50rem;
+.projectsHeaderContainer {
+    padding-left: 15vw;
 }
 
+.projectsHeader > span {
+    height: 1px;
+    width: 40vw;
+}
 
-@media (max-width: 500px) {
+@media (max-width: 775px) {
     .projContainer {
         max-height: 80%;
+    }
+
+    .projectsHeaderContainer {
+        padding-left: 0;
+        padding-right: 0 !important;
     }
 
     .projectsHeader {
@@ -24,5 +32,10 @@
     .projectsHeader > span {
         margin-top: 1.4rem;
         display: none;
+    }
+    
+    .projectsHeader {
+        white-space: nowrap;
+        align-self: center;
     }
 }
