@@ -19,12 +19,12 @@ const handleLinkBtn = (extLink: string) => {
 
 const Featured = ({projName, projDesc, projTechs, gitLink, externalLink}: FeatProps) => {
     return (
-        <div className="featuredContainer flex flex-col xl:pt-28">
-            <div className="featuredSide flex flex-col xl:items-end items-center xl:pl-52">
+        <div className="featuredContainer flex flex-col xl:pt-28 md:p-24 sm:p-20">
+            <div className="featuredSide flex flex-col xl:pl-52">
                 <div className="featuredTitle flex justify-end xl:pr-4 xl:pt-8 pt-8">
                     <p className="font-mono text-green-500 justify-end">Featured Project</p>
                 </div>
-                <div className="featuredName flex justify-end xl:pr-4">
+                <div className="featuredName flex justify-end xl:pr-4 ">
                     <p className="font-sans font-black text-2xl mb-8">{projName}</p>
                 </div>
                 <div className="featuredDescription flex border-2 border-green-400 bg-green-400 rounded-md flex-grow justify-center items-center shadow-xl">
