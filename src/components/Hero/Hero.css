@@ -1,3 +1,7 @@
+.heroContainer {
+    padding: 2rem;
+}
+
 .heroTitleContainer {
     max-width: 100%;
     max-height: 100%;
@@ -7,6 +11,10 @@
 
 .heroTitle {
     transform: translateX(0%) translateZ(0px);
+}
+
+.heroFlare, .heroBtnContainer {
+    display: flex;
 }
 
 .heroBtn {
@@ -27,9 +35,10 @@
 }
 
 .codeContainer {
-    width: 35rem;
+    /* width: 35rem; */
+    width: 55rem;
     height: 20rem;
-    margin-left: 50rem;
+    margin-right: 10%;
     margin-bottom: 5rem;
 }
 
@@ -150,10 +159,31 @@ ol li::marker {
     50% { border-color: #777; }
 }
 
-@media (max-width:500px) {
+
+@media (max-width: 1279px) and (min-width: 1024px) {
+    .heroTitle {
+        font-size: 6.5rem !important;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 775px) {
+    .heroContainer {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .heroFlare {
+        display: none;
+    }
+
+    .heroBtnContainer {
+        display: none;
+    }
 
     .heroTitleContainer {
         align-items: center;
+        height: fit-content;
     }
     
     .heroTitle {
@@ -164,13 +194,15 @@ ol li::marker {
         margin-left: 0;
         align-self: center;
         /*width: 25.8rem;*/
-        width: 90vw;
+        width: 80vw;
         height: 16.6rem;
         margin-bottom: 10rem;
+        margin-right: 0;
+        margin-top: 3rem;
     }
     
     .code {
         word-wrap: break-word;
-        font-size: 2.5vw;
+        font-size: .7rem;
     }
 }
