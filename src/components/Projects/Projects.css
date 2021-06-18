@@ -12,6 +12,10 @@
 
 
 @media (max-width: 500px) {
+    .projContainer {
+        max-height: 80%;
+    }
+
     .projectsHeader {
         white-space: nowrap;
         align-self: center;
