@@ -151,8 +151,13 @@ ol li::marker {
 }
 
 @media (max-width:500px) {
+
     .heroTitleContainer {
         align-items: center;
+    }
+    
+    .heroTitle {
+        text-align: center;
     }
 
     .codeContainer {
