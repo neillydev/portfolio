@@ -20,8 +20,8 @@ const handleLinkBtn = (extLink: string) => {
 const Featured = ({projName, projDesc, projTechs, gitLink, externalLink}: FeatProps) => {
     return (
         <div className="featuredContainer flex flex-col xl:pt-28">
-            <div className="featuredSide flex flex-col items-end xl:pl-52">
-                <div className="featuredTitle flex justify-end xl:pr-4 xl:pt-8">
+            <div className="featuredSide flex flex-col xl:items-end items-center xl:pl-52">
+                <div className="featuredTitle flex justify-end xl:pr-4 xl:pt-8 pt-8">
                     <p className="font-mono text-green-500 justify-end">Featured Project</p>
                 </div>
                 <div className="featuredName flex justify-end xl:pr-4">
@@ -38,7 +38,7 @@ const Featured = ({projName, projDesc, projTechs, gitLink, externalLink}: FeatPr
                             projTechs.map(tech => <p className="technology">{tech}</p>)
                         }
                     </div>
-                    <div className="socialFooter flex justify-end">
+                    <div className="socialFooter flex xl:justify-end lg:justify-end md:justify-end justify-center">
                         <button className="projSocial" onClick={() => handleLinkBtn(gitLink)}>
                             <ProjectGitIcon />
                         </button>

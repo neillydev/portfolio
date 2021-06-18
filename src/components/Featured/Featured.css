@@ -38,15 +38,21 @@
 
 @media (max-width: 500px) {
     .imageContainer {
-        height: 5rem;
-        width: 15rem;
+        height: 10rem;
+        width: 20rem;
+        margin: 15.5vw;
+        padding-top: 2rem;
         z-index: -1;
     }
 
     .featuredDescription {
+        margin-top: 18vh;
         height: 4.5rem;
-        width: 20rem;
+        width: 85vw;
         z-index: 1;
     }
     
+    .featuredText {
+        font-size: 12.5px;
+    }
 }
