@@ -24,7 +24,7 @@
     width: auto;
 }
 
-@media (max-width:500px) {
+@media (max-width: 775px) {
     .contactBody {
         text-align: center;
     }
