@@ -23,3 +23,9 @@
     /*width: 30rem;*/
     width: auto;
 }
+
+@media (max-width:500px) {
+    .contactBody {
+        text-align: center;
+    }
+}
