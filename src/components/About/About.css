@@ -5,6 +5,10 @@
     height: 100vh;
 }
 
+.aboutTitleContainer {
+    padding-left: 15vw;
+} 
+
 .aboutHeader > span {
     height: 1px;
     width: 50rem;
@@ -72,10 +76,15 @@
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 
-@media (max-width:500px){
+@media (max-width: 775px) {
     .aboutContainer{
         max-height: 90%;
     }
+
+    .aboutTitleContainer {
+        padding-left: 0;
+        padding-right: 0 !important;
+    } 
 
     .aboutBody {
         height: 70%;
