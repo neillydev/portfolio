@@ -13,7 +13,7 @@ const Hero = ({ handleProjectBtn, handleModalActive }: HeroProps) => {
             <div className="heroTitleContainer bg-white flex flex-col xl:pl-52 xl:pt-52 lg:pl-32 lg:pt-32 md:pt-24 pt-16">
                 <div className="flex flex-col md:mb-2 mb-2">
                     <span className='shadow-lg bg-green-400 lg:w-52 md:w-44 w-36 lg:h-8 md:h-6 h-5 rounded-sm flex items-center justify-center'>
-                        <h1 className='font-mono font-semibold lg:text-base md:text-sm text-xs'>Full Stack Developer</h1>
+                        <h1 className='font-mono font-semibold whitespace-nowrap lg:text-base md:text-sm text-xs'>Full Stack Developer</h1>
                     </span>
                 </div>
                 <h1 className='heroTitle xl:text-9xl md:text-8xl sm:text-5xl 
