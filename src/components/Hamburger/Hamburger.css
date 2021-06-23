@@ -1,0 +1,34 @@
+.hamburgerContainer {
+    margin-right: 5%;
+}
+
+.hamburgerTop {
+    position: absolute;
+    content: "";
+    height: 3.5px;
+    background: rgba(16, 185, 129, 1);
+    border-radius: 4px;
+    top: -10px;
+    left: 0;
+    width: 15px;
+}
+
+.hamburgerMeat {
+    position: relative;
+    content: "";
+    height: 3.5px;
+    width: 35px;
+    background: rgba(16, 185, 129, 1);
+    border-radius: 4px;
+}
+
+.hamburgerBottom {
+    position: absolute;
+    content: "";
+    height: 3.5px;
+    background: rgba(16, 185, 129, 1);
+    border-radius: 4px;
+    top: 10px;
+    right: 0;
+    width: 15px;
+}
