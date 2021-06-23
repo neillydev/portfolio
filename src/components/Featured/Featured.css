@@ -61,6 +61,7 @@
 @media (max-width: 775px) {
     .featuredContainer {
         padding: 0 !important;
+        height: initial;
     }
 
 
