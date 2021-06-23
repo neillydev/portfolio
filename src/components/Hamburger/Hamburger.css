@@ -1,34 +1,37 @@
 .hamburgerContainer {
-    margin-right: 5%;
+    margin-right: 9%;
 }
 
 .hamburgerTop {
     position: absolute;
     content: "";
-    height: 3.5px;
-    background: rgba(16, 185, 129, 1);
-    border-radius: 4px;
-    top: -10px;
+    height: 2.5px;
+    /* background: rgba(16, 185, 129, 1); */
+    background-color: black;
+    border-radius: 15%;
+    top: -7px;
     left: 0;
-    width: 15px;
+    width: 10px;
 }
 
 .hamburgerMeat {
     position: relative;
     content: "";
-    height: 3.5px;
-    width: 35px;
-    background: rgba(16, 185, 129, 1);
-    border-radius: 4px;
+    height: 2.5px;
+    width: 20px;
+    /* background: rgba(16, 185, 129, 1); */
+    background-color: black;
+    border-radius: 10%;
 }
 
 .hamburgerBottom {
     position: absolute;
     content: "";
-    height: 3.5px;
-    background: rgba(16, 185, 129, 1);
-    border-radius: 4px;
-    top: 10px;
+    height: 2.5px;
+    /* background: rgba(16, 185, 129, 1); */
+    background-color: black;
+    border-radius: 15%;
+    top: 7px;
     right: 0;
-    width: 15px;
+    width: 10px;
 }
