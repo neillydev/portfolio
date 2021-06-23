@@ -34,6 +34,7 @@ const About = ({ refObj }: AbtProps) => {
                             <li>Node.js</li>
                             <li>Python</li>
                             <li>React</li>
+                            <li>Angular</li>
                         </ul>
                     </p>
                 </div>
