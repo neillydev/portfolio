@@ -3,11 +3,14 @@ import Exit from '../Icons/Exit';
 
 require('./Hamburger.css');
 
-const Hamburger = () => {
-    const [hamburgerHelper, setHamburgerHelper] = useState(false);
+type HamburgerProps = {
+    handleHamburgerHelped: () => void,
+    hamburgerHelper: boolean
+}
 
+const Hamburger = ({handleHamburgerHelped, hamburgerHelper}: HamburgerProps) => {
     return (
-        <div className={`hamburgerContainer relative flex justify-end cursor-pointer ${hamburgerHelper && 'hamburgerAnim'}`} onClick={() => setHamburgerHelper(!hamburgerHelper)}>
+        <div className={`hamburgerContainer relative flex justify-end cursor-pointer ${hamburgerHelper && 'hamburgerAnim'}`} onClick={handleHamburgerHelped}>
             <div className="hamburgerLines">
                 {hamburgerHelper ?
                     <Exit />
