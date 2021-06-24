@@ -46,6 +46,7 @@ const App = () => {
 
     const handleHamburgerHelped = () => {
         setHamburgerHelper(!hamburgerHelper);
+        document.body.style.overflowY = hamburgerHelper ? 'scroll' : 'hidden';
     }
 
     return (
