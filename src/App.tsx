@@ -50,8 +50,14 @@ const App = () => {
 
     return (
         <div className='container'>
+            <NavBar 
+                handleProjectBtn={handleProjectBtn} 
+                handleAbtBtn={handleAbtBtn} 
+                handleContactBtn={handleContactBtn} 
+                handleHamburgerHelped={handleHamburgerHelped} 
+                hamburgerHelper={hamburgerHelper} 
+            />
             {hamburgerHelper ? <HamburgerMenu /> : null}
-            <NavBar handleProjectBtn={handleProjectBtn} handleAbtBtn={handleAbtBtn} handleContactBtn={handleContactBtn} handleHamburgerHelped={handleHamburgerHelped} hamburgerHelper={hamburgerHelper} />
             <Hero handleProjectBtn={handleProjectBtn} handleModalActive={handleModalActive} />
             <About refObj={abtRef}/>
             <Projects refObj={projRef} />
