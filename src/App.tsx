@@ -19,6 +19,7 @@ const App = () => {
     const contactRef = useRef<HTMLDivElement>(null);
 
     const [modalActive, setModalActive] = useState(false);
+    const [hamburgerHelper, setHamburgerHelper] = useState(false);
     
     const handleProjectBtn = () => {
         if(projRef.current){
@@ -42,9 +43,13 @@ const App = () => {
         setModalActive(modalSet);
     }
 
+    const handleHamburgerHelped = () => {
+        setHamburgerHelper(!hamburgerHelper);
+    }
+
     return (
         <div className='container'>
-            <NavBar handleProjectBtn={handleProjectBtn} handleAbtBtn={handleAbtBtn} handleContactBtn={handleContactBtn} />
+            <NavBar handleProjectBtn={handleProjectBtn} handleAbtBtn={handleAbtBtn} handleContactBtn={handleContactBtn} handleHamburgerHelped={handleHamburgerHelped} hamburgerHelper={hamburgerHelper} />
             <Hero handleProjectBtn={handleProjectBtn} handleModalActive={handleModalActive} />
             <About refObj={abtRef}/>
             <Projects refObj={projRef} />
