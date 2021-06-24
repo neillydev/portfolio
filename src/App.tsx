@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero';
 import Projects from './components/Projects/Projects';
 
 import './styles.css';
+import HamburgerMenu from './components/HamburgerMenu/HamburgerMenu';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
@@ -49,6 +50,7 @@ const App = () => {
 
     return (
         <div className='container'>
+            {hamburgerHelper ? <HamburgerMenu /> : null}
             <NavBar handleProjectBtn={handleProjectBtn} handleAbtBtn={handleAbtBtn} handleContactBtn={handleContactBtn} handleHamburgerHelped={handleHamburgerHelped} hamburgerHelper={hamburgerHelper} />
             <Hero handleProjectBtn={handleProjectBtn} handleModalActive={handleModalActive} />
             <About refObj={abtRef}/>
