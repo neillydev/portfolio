@@ -1,43 +1,43 @@
 .hamburgerContainer {
-    margin-right: 9%;
+  margin-right: 9%;
 }
 
-.hamburgerContainer:hover {
-    animation-name: hamburgerAnim;
-    animation-duration: 0.4s;
-    background-color: transparent;
-    transition: .1s all .15s;
+.hamburgerAnim {
+  animation-name: hamburgerAnim;
+  animation-duration: 0.3s;
+  background-color: transparent;
+  transition: .1s all;
 }
 
 .hamburgerTop {
-    position: absolute;
-    content: "";
-    height: 2.5px;
-    background-color: black;
-    border-radius: 15%;
-    top: -7px;
-    left: 0;
-    width: 10px;
+  position: absolute;
+  content: "";
+  height: 2.5px;
+  background-color: black;
+  border-radius: 15%;
+  top: -7px;
+  left: 0;
+  width: 10px;
 }
 
 .hamburgerMeat {
-    position: relative;
-    content: "";
-    height: 2.5px;
-    width: 20px;
-    background-color: black;
-    border-radius: 10%;
+  position: relative;
+  content: "";
+  height: 2.5px;
+  width: 20px;
+  background-color: black;
+  border-radius: 10%;
 }
 
 .hamburgerBottom {
-    position: absolute;
-    content: "";
-    height: 2.5px;
-    background-color: black;
-    border-radius: 15%;
-    top: 7px;
-    right: 0;
-    width: 10px;
+  position: absolute;
+  content: "";
+  height: 2.5px;
+  background-color: black;
+  border-radius: 15%;
+  top: 7px;
+  right: 0;
+  width: 10px;
 }
 
 @keyframes hamburgerAnim {
@@ -56,14 +56,7 @@
       transform: translateX(0.7em);
       opacity: 0;
     }
-    51% {
-      opacity: 0;
-    }
-    75% {
-      opacity: 1;
-    }
     100% {
-      transform: translateX(0px);
-      opacity: 1;
+      opacity: 0;
     }
 }
