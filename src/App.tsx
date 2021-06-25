@@ -59,7 +59,14 @@ const App = () => {
                 handleHamburgerHelped={handleHamburgerHelped} 
                 hamburgerHelper={hamburgerHelper} 
             />
-            {hamburgerHelper ? <HamburgerMenu /> : null}
+            {hamburgerHelper ? 
+                <HamburgerMenu
+                    handleProjectBtn={handleProjectBtn}
+                    handleAbtBtn={handleAbtBtn}
+                    handleContactBtn={handleContactBtn}
+                    handleHamburgerHelped={handleHamburgerHelped}
+                /> 
+            : null}
             <Hero handleProjectBtn={handleProjectBtn} handleModalActive={handleModalActive} />
             <About refObj={abtRef}/>
             <Projects refObj={projRef} />
