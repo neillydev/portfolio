@@ -10,7 +10,7 @@
 }
 
 .navBtn:hover{
-    color: rgba(16, 185, 129, var(--tw-bg-opacity));
+    color: rgba(16, 185, 129, 1);
 }
 
 .btnHov {
