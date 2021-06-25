@@ -10,6 +10,20 @@
     transition: 0.5s;
 }
 
+.mobileNavBtn {
+    outline: none;
+    border:none;
+    position: relative;
+}
+
+.mobileNavBtn:focus {
+    outline: none;
+}
+
+.mobileNavBtn:active {
+    color: rgba(16, 185, 129, 1);
+}
+
 .hamburgerOverlayAnimation {
   animation-name: hamburgerOverlayAnimation;
   animation-duration: 0.3s;
