@@ -188,6 +188,7 @@ ol li::marker {
 
     .heroTitleContainer > div > span {
         padding: .7rem;
+        width: 100%;
     }
     
     .heroTitleContainer > div > span > h1 {
