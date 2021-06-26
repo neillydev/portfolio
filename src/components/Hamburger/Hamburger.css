@@ -1,4 +1,5 @@
 .hamburgerContainer {
+  display: none;
   margin-right: 9%;
 }
 
@@ -59,4 +60,11 @@
     100% {
       opacity: 0;
     }
+}
+
+
+@media (max-width: 775px) {
+  .hamburgerContainer {
+    display: flex;
+  }
 }
