@@ -171,7 +171,7 @@ ol li::marker {
     }
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1450px) and (min-width: 1280px)  {
     .codeContainer {
         width: 47rem;
         height: 18rem;
@@ -183,6 +183,27 @@ ol li::marker {
     .heroTitle {
         font-size: 6.5rem !important;
         line-height: 1;
+    }
+    .codeContainer {
+        margin-bottom: 15rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .codeContainer {
+        margin-left: 5%;
+        width: 55rem;
+        height: 18rem;
+        margin-bottom: 17rem;
+    }
+    .code {
+        font-size: 11.5px !important;
+    }
+}
+
+@media (max-width: 1150px) {
+    .codeContainer {
+        margin-left: 5%;
     }
 }
 
