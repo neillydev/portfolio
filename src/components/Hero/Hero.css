@@ -159,6 +159,17 @@ ol li::marker {
     50% { border-color: #777; }
 }
 
+@media (max-width: 1600px) {
+    .codeContainer {
+        margin-right: 3%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .codeContainer {
+        margin-right: 0%;
+    }
+}
 
 @media (max-width: 1279px) and (min-width: 1024px) {
     .heroTitle {
