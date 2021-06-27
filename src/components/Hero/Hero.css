@@ -171,6 +171,14 @@ ol li::marker {
     }
 }
 
+@media (max-width: 1450px) {
+    .codeContainer {
+        width: 47rem;
+        height: 18rem;
+        margin-bottom: 6.3rem;
+    }
+}
+
 @media (max-width: 1279px) and (min-width: 1024px) {
     .heroTitle {
         font-size: 6.5rem !important;
