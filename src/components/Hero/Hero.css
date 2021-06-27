@@ -177,6 +177,9 @@ ol li::marker {
         height: 18rem;
         margin-bottom: 6.3rem;
     }
+    .code {
+        font-size: 12px !important;
+    }
 }
 
 @media (max-width: 1279px) and (min-width: 1024px) {
@@ -207,10 +210,15 @@ ol li::marker {
     }
 }
 
+@media (max-width: 1023px) {
+    .codeContainer {
+        margin-bottom: 22rem;
+    }
+}
+
 @media (max-width: 775px) {
     .heroContainer {
         flex-direction: column;
-        /*height: 100%;*/
     }
 
     .heroFlare {
