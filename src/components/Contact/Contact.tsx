@@ -11,7 +11,7 @@ const Contact = ({ refObj, handleModalActive }: ContactProps) => {
         <div ref={refObj} className="contactContainer flex flex-col mb-20 justify-center items-center">
             <div className="contactHeader flex justify-center">
                 <span className='bg-green-200 mr-8 rounded-xl mt-10' />
-                <h1 className="font-black text-6xl">Let's Chat</h1>
+                <h1 className="font-black md:text-6xl text-5xl">Let's Chat</h1>
                 <span className='bg-green-200 ml-8 rounded-xl mt-10' />
             </div>
             <div className="contactBody flex justify-center m-16">
