@@ -40,9 +40,9 @@ const App = () => {
         }
     }
 
-    const handleModalActive = (modalSet: boolean) => {
-        setModalActive(modalSet);
-    }
+    // const handleModalActive = (modalSet: boolean) => {
+    //     setModalActive(modalSet);
+    // }
 
     const handleHamburgerHelped = () => {
         setHamburgerHelper(!hamburgerHelper);
@@ -67,11 +67,10 @@ const App = () => {
                     handleHamburgerHelped={handleHamburgerHelped}
                 /> 
             : null}
-            <Hero handleProjectBtn={handleProjectBtn} handleModalActive={handleModalActive} />
+            <Hero handleProjectBtn={handleProjectBtn} handleContactBtn={handleContactBtn} />
             <About refObj={abtRef}/>
             <Projects refObj={projRef} />
-            <Contact refObj={contactRef} handleModalActive={handleModalActive} />
-            { modalActive ? <Modal handleModalActive={handleModalActive} /> : null}
+            <Contact refObj={contactRef} />
             <Socials />
             <Footer />
         </div>
