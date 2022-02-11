@@ -7,7 +7,7 @@ type ContactProps = {
 }
 const Contact = ({ refObj }: ContactProps) => {
     return (
-        <div ref={refObj} className="contactContainer flex flex-col mb-20 justify-center items-center">
+        <div ref={refObj} className="contactContainer flex flex-col justify-center items-center">
             <div className="contactHeader flex justify-center">
                 <span className='bg-green-200 mr-8 rounded-xl mt-10' />
                 <h1 className="font-black md:text-6xl text-5xl">Let's Chat</h1>
