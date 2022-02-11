@@ -22,7 +22,7 @@ const Projects = ({ refObj }: ProjectProps) => {
                 <Featured
                     img='https://camo.githubusercontent.com/93f69877443045fe783bbc15a7746137eb6d30500a8fd2d5ce783db04b2f8dcd/68747470733a2f2f692e6779617a6f2e636f6d2f39376264323633623931666362633232393638373931356261303936396330622e706e67'
                     projName='Waves'
-                    projDesc='A real video sharing social media app that allows anybody to share their content with the world'
+                    projDesc='A real video sharing social media app that allows anybody to share their content online'
                     projTechs={['React.JS']}
                     gitLink='https://github.com/neillydev/waves'
                     externalLink=''
