@@ -20,6 +20,13 @@ const Projects = ({ refObj }: ProjectProps) => {
             </div>
             <div className="featuresContainer flex justify-center">
                 <Featured
+                    projName='Waves'
+                    projDesc='A real video sharing social media app that allows anybody to share their content with the world'
+                    projTechs={['React.JS']}
+                    gitLink='https://github.com/neillydev/waves'
+                    externalLink=''
+                />
+                <Featured
                     projName='Covid Maps'
                     projDesc='An interactive map of real-time Covid-19 case data built with React JS and the Google Maps API'
                     projTechs={['React.JS', 'Google Maps API']}
