@@ -40,10 +40,6 @@ const App = () => {
         }
     }
 
-    // const handleModalActive = (modalSet: boolean) => {
-    //     setModalActive(modalSet);
-    // }
-
     const handleHamburgerHelped = () => {
         setHamburgerHelper(!hamburgerHelper);
         document.body.style.overflow = hamburgerHelper ? 'scroll' : 'hidden';
