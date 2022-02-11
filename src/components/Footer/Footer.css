@@ -1,3 +1,7 @@
+.footerContainer {
+    padding: 3rem;
+}
+
 .footerCredit {
     /*font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;*/
     line-height: 1;
