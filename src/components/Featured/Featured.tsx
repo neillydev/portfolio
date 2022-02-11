@@ -6,6 +6,7 @@ import ProjectGitIcon from '../Icons/ProjectGitIcon';
 require('./Featured.css');
 
 type FeatProps = {
+    img: string,
     projName: string,
     projDesc: string,
     projTechs: string[],
@@ -17,7 +18,7 @@ const handleLinkBtn = (extLink: string) => {
     window.open(extLink, '_blank');
 }
 
-const Featured = ({projName, projDesc, projTechs, gitLink, externalLink}: FeatProps) => {
+const Featured = ({img, projName, projDesc, projTechs, gitLink, externalLink}: FeatProps) => {
     return (
         <div className="featuredContainer flex flex-col xl:pt-28 md:p-24 sm:p-20">
             <div className="featuredSide flex flex-col xl:pl-52">
@@ -50,7 +51,7 @@ const Featured = ({projName, projDesc, projTechs, gitLink, externalLink}: FeatPr
             </div>
             <div className="imageContainer flex rounded-md absolute">
                 <picture>
-                    <img className="featureImg" src="https://camo.githubusercontent.com/4390730c6105344b42f84005ddb19ae85016f3354a1740e7812285a4463ceca2/68747470733a2f2f692e696d6775722e636f6d2f676c54516271552e706e67" alt="covidMaps" />
+                    <img className="featureImg" src={img} alt="featureImage" />
                 </picture>
             </div>
         </div>

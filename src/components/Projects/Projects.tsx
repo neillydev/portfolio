@@ -20,6 +20,7 @@ const Projects = ({ refObj }: ProjectProps) => {
             </div>
             <div className="featuresContainer flex justify-center">
                 <Featured
+                    img=''
                     projName='Waves'
                     projDesc='A real video sharing social media app that allows anybody to share their content with the world'
                     projTechs={['React.JS']}
@@ -27,6 +28,7 @@ const Projects = ({ refObj }: ProjectProps) => {
                     externalLink=''
                 />
                 <Featured
+                    img='https://camo.githubusercontent.com/4390730c6105344b42f84005ddb19ae85016f3354a1740e7812285a4463ceca2/68747470733a2f2f692e696d6775722e636f6d2f676c54516271552e706e67'
                     projName='Covid Maps'
                     projDesc='An interactive map of real-time Covid-19 case data built with React JS and the Google Maps API'
                     projTechs={['React.JS', 'Google Maps API']}
