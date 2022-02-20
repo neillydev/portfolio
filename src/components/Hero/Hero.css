@@ -264,3 +264,9 @@ ol li::marker {
         font-size: 2vw;
     }
 }
+
+@media (max-width: 450px) {
+    .code {
+        font-size: 8.5px !important;
+    }
+}
