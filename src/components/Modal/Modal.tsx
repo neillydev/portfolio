@@ -1,13 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+import {ModalContext, ModalProvider} from '../contexts/ModalContext';
 
 require('./Modal.css');
 
-type ModalProps = {
-    handleModalActive: (modalSet: boolean) => void;
-}
+const Modal = () => {
 
-const Modal = ({ handleModalActive }: ModalProps) => {
-
+    const { dispatch } = useContext(ModalContext);
     return (
         <div className="modalContainer flex items-center justify-center">
             <div className="modalLayer flex items-center justify-center">
@@ -36,7 +35,7 @@ const Modal = ({ handleModalActive }: ModalProps) => {
                         </div>
                     </div>
                 </form>
-                <div className="modalBackground" onClick={() => handleModalActive(false)}>
+                <div className="modalBackground" onClick={() => dispatch( { type: 'false' } )}>
 
                 </div>
             </div>
