@@ -11,8 +11,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    opacity: 0.85;
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, .3);
     pointer-events: all;
     z-index: 101;
 }
