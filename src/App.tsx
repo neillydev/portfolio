@@ -66,7 +66,10 @@ const App = () => {
             <Hero handleProjectBtn={handleProjectBtn} handleContactBtn={handleContactBtn} />
             <About refObj={abtRef}/>
             <Projects refObj={projRef} />
-            <Contact refObj={contactRef} />
+            <Contact 
+                refObj={contactRef} 
+                handleContactBtn={handleContactBtn} 
+            />
             <Socials />
             <Footer />
         </div>
