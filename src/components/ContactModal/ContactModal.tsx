@@ -17,7 +17,7 @@ const ContactModal = () => {
 
     const handleFormSubmit = (e: React.MouseEvent<HTMLElement>) => {
         e.preventDefault();
-        send('service_ID', 'template_ID', formContent, 'user_id');
+        send(process.env.SERVICE_ID ? process.env.SERVICE_ID : '', process.env.TEMPLATE_ID ? process.env.TEMPLATE_ID : '', formContent, process.env.USER_ID);
         dispatch({ type: 'false' });
     };
 
