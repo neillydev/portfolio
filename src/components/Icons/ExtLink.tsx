@@ -3,7 +3,6 @@ import React from 'react'
 const ExtLink = () => {
     return (
         <svg style={{
-			backgroundColor: 'white',
 			width: '22px',
 			height: '22px',
 			marginTop: '-4px'

@@ -4,7 +4,6 @@ const Exit = () => {
     return (
         <svg className='exitSvg' style={{
 			position: 'relative',
-			backgroundColor: 'white',
 			width: '30px',
 			height: '30px',
 			zIndex: 1000
