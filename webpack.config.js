@@ -62,9 +62,7 @@ module.exports = {
                 "NODE_ENV": JSON.stringify(process.env.NODE_ENV)
             }
         }),
-        new Dotenv({
-            path: `./environments/.env`
-        })
+        new Dotenv()
     ],
     devServer: {
         historyApiFallback: true,
