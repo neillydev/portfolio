@@ -11,6 +11,7 @@ import Contact from './components/Contact/Contact';
 import Modal from './components/Modal/Modal';
 import { ModalContext } from './components/contexts/ModalContext'
 import Socials from './components/Socials/Socials';
+import ContactModal from './components/ContactModal/ContactModal';
 require('./App.css');
 
 
@@ -73,7 +74,7 @@ const App = () => {
             <Footer />
             {
                 state ?
-                    <Modal />
+                    <ContactModal />
                     :
                     null
             }
