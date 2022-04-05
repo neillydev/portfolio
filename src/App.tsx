@@ -8,7 +8,6 @@ import HamburgerMenu from './components/HamburgerMenu/HamburgerMenu';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
-import Modal from './components/Modal/Modal';
 import { ModalContext } from './components/contexts/ModalContext'
 import Socials from './components/Socials/Socials';
 import ContactModal from './components/ContactModal/ContactModal';
