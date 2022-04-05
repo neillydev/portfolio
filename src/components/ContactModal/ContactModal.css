@@ -114,3 +114,41 @@
         height: 40vh;
     }
 }
+
+@media (max-width: 390px) {
+    .modalContent {
+        overflow: auto;
+    }
+
+    .modalWrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .modalSidebar {
+        display: none;
+    }
+
+    .modalHeader {
+        justify-content: center;
+    }
+
+    .modalBodyMessage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .messageInput {
+        width: 20rem;
+    }
+
+    .modalBodyInfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modalControls {
+        justify-content: center;
+    }
+}
