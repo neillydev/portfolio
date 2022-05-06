@@ -151,4 +151,9 @@
     .modalControls {
         justify-content: center;
     }
+
+    .modalExit {
+        display: flex;
+        justify-content: flex-end;
+    }
 }

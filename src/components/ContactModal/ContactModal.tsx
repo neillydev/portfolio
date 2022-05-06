@@ -3,6 +3,8 @@ import { send } from 'emailjs-com';
 
 import { ModalContext, ModalProvider } from '../contexts/ModalContext';
 
+import ExitSVG from '../Icons/Exit';
+
 require('./ContactModal.css');
 
 const ContactModal = () => {
@@ -31,6 +33,9 @@ const ContactModal = () => {
                 <div className="modalSidebar">
                 </div>
                 <div className="modalContent">
+                    <div className="modalExit" onClick={() => dispatch({ type: 'false' })}>
+                        <ExitSVG />
+                    </div>
                     <div className="modalHeader">
                         <h1 className="font-black font-sans">Let's Get In Touch</h1>
                     </div>
