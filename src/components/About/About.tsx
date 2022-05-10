@@ -43,6 +43,9 @@ const About = ({ refObj }: AbtProps) => {
                         <div className="aboutImgOverlay">
                             
                         </div>
+                        <picture>
+                            <img className="aboutImgHeadshot" width="500" height="500" src="https://i.imgur.com/YHOjM4H.jpg"></img>
+                        </picture>
                     </div>
                 </div>
             </div>
